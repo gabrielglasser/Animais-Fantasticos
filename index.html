@@ -135,22 +135,42 @@
             </div>
           </section>
 
-        <section class="grid-section contato" id="contato">
-            <h1 class="titulo">Contato</h1>
-            <div class="mapa">
-                <img src="image/mapa.png">
+          <section class="grid-section numeros" data-anime="scroll">
+            <h1 class="titulo">Números</h1>
+            <div class="numeros-grid">
             </div>
-            <ul class="dados">
-                <li>sga91000@gmail.com</li>
-                <li>+55 (15) 99858-2081</li>
-                <li>Rua Casa da Mãe Joana, n*50</li>
-                <li>São Paulo,Br</li>
-            </ul>
+          </section>
+
+          <section class="grid-section contato" data-anime="scroll" id="contato">
+          <h1 class="titulo">Contato</h1>
+          <div class="mapa" data-tooltip aria-label="Endereço próximo ao estacionamento.">
+            <img src="img/mapa.png">
+          </div>
+          <ul class="dados">
+            <li>blacksantos@gmail.com</li>
+            <li>+55 (15) 9199-9999</li>
+            <li>Rua do chaves, nº 69</li>
+            <li>Acapulco - México</li>
+            <li>Doe <span class="btc-preco">0</span> bitcoin para nos ajudar</li>
+            <li data-semana="1,2,3,4,5" data-horario="8,18">Seg à Sex das 8 às 16</li>
+          </ul>
         </section>
 
         <footer class="copy">
             <p>Todos os direitos reservados. BLACKSANTOS</p>
         </footer>
+        <section class="modal-container" data-modal="container">
+            <div class="modal">
+              <button data-modal="fechar" class="fechar">X</button>
+              <form action="">
+                <label for="email">Email</label>
+                <input type="text" for="email" id="email">
+                <label for="senha">Senha</label>
+                <input type="password" for="senha" id="senha">
+                <button type="submit">Entrar</button>
+              </form>
+            </div>
+          </section>
 
     <script src="script.js"></script>
 </body>
