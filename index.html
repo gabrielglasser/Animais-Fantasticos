@@ -10,18 +10,28 @@
         
 </head>
 <body>
-    <nav class="menu">
-        <ul>
-            <li><a href="#animais">Animais</a></li>
-            <li><a href="#faq">Faq</a></li>
-            <li><a href="#contato">Contato</a></li>
-            <li><a href="#https://gabrielglasser.github.io/Tela-Login-Dark/">Dev</a></li>
+    <nav class="menu" data-menu="suave">
+        <button data-menu="button" aria-expanded="false" aria-controls="menu">Menu</button>
+        <ul data-menu="list" id="menu">
+          <li><a href="#animais">Animais</a></li>
+          <li data-dropdown>
+            <a href="sobre.html">Sobre</a>
+            <ul class="dropdown-menu">
+              <li><a href="empresa.html">A Empresa</a></li>
+              <li><a href="equipe.html">Equipe</a></li>
+              <li><a href="socios.html">Sócios</a></li>
+              <li><a href="investidores.html">Investidores</a></li>
+            </ul>
+          </li>
+          <li><a href="#faq">Faq</a></li>
+          <li><a href="#contato">Contato</a></li>
+          <li><a data-modal="abrir" href="login.html">Login →</a></li>
         </ul>
-    </nav>
+      </nav>
 
-    <section class="grid-section animais "id="animais">
+      <section class="grid-section animais" data-anime="scroll" id="animais">
         <h1 class="titulo">Animais Fantásticos</h1>
-        <ul class="animais-lista">
+        <ul class="animais-lista" data-tab="menu">
             <li>
                 <img src="image/imagem1.jpg">
             </li>
@@ -41,8 +51,8 @@
                 <img src="image/imagem6.jpg">
             </li>
         </ul>
-        <div class="animais-descricao">
-            <section>
+        <div class="animais-descricao" data-tab="content">
+            <section data-anime="show-right">
                 <h2>Raposa</h2>
                 <p>Raposas são pequenos a médios mamíferos onívoros pertencentes a vários gêneros da família Canidae.</p>
                 <P>As raposas têm o
@@ -55,32 +65,32 @@
                     que
                     consiste na raposa-orelhas-de-morcego, raposa-cinzenta e raposa-das-ilhas.</P>
             </section>
-            <section>
+            <section data-anime="show-right">
                 <h2>Esquilo</h2>
                 <p>Os esquilos pertencem a uma grande família de mamíferos roedores, de pequeno e médio porte, conhecida como Sciuridae.</p>
                 <P> No Brasil, são também conhecidos como serelepe, caxinguelê, caxinxe, quatimirim, quatipuru, agutipuru ou acutipuru. Na Galiza e em algumas zonas de Portugal, também são conhecido por esquio.</P>
                 <P> Alimentação: Frutos e sementes, principalmente os coqueiros das palmeiras.</P>
             </section>
-            <section>
+            <section data-anime="show-down">
                 <h2>Urso</h2>
                 <p>Os Ursos constituem uma família de mamíferos carnívoros de grande porte, contendo os ursos e os pandas.</p>
                 <P>Os Ursos constituem uma família de mamíferos carnívoros de grande porte, contendo os ursos e os pandas.</P>
                 <P>O que os ursos se alimentam?
                     Onívoros, sua dieta inclui mel, frutas, larvas, mariposas, peixes, pequenos roedores e carniça de grandes animais. Alguns indivíduos podem invadir plantações e habitações em busca de alimento.</P>
             </section>
-            <section>
+            <section data-anime="show-down">
                 <h2>Lobo</h2>
                 <p>O lobo é uma espécie de mamífero canídeo do gênero Canis.</p>
                 <P> É um sobrevivente da Era do Gelo, originário do Pleistoceno Superior, cerca de 300 mil anos atrás. É o maior membro remanescente selvagem da família canidae.</P>
                 <P> Os lobos são animais carnívoros, ou seja, se alimentam de outros animais. Sua dieta varia de acordo com a área e disponibilidade de presas. Alces, bisões e bois almiscarados são exemplos de animais que fazem parte da dieta dos lobos.</P>
             </section>
-            <section>
+            <section data-anime="show-right">
                 <h2>Macaco</h2>
                 <p>Macaco é um termo de origem africana utilizado como designação comum a todas as espécies de símios ou primatas antropoides.</p>
                 <P>Macaco é um termo de origem africana utilizado como designação comum a todas as espécies de símios ou primatas antropoides.</P>
                 <P>Macaco é um termo utilizado para referir-se a espécies de primatas. Os macacos são animais importantes para o meio ambiente, estando muitas espécies ameaçadas.</P>
             </section>
-            <section>
+            <section data-anime="show-right">
                 <h2>Leão</h2>
                 <p>O leão é um animal mamífero felino, vertebrado e carnívoro de grande porte. O seu nome científico é Panthera leo.
                     Conhecido como o Rei da Selva, o leão pode ser encontrado na Ásia, África e Europa.</p>
@@ -90,9 +100,9 @@
             </section>
             </div>
             </section>
-        <section class="grid-section faq" id="faq">
+        <section class="grid-section faq" id="faq" data-anime="scroll">
             <h1 class="titulo">FAQ</h1>
-            <dl class="faq-lista">
+            <dl class="faq-lista" data-anime="accordion">
                 <dt>Qual a idade dos animais?</dt>
                 <dd>As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados por um focinho comprido e uma cauda longa e peluda.</dd>
                 <dt>Eles são fantásticos?</dt>
@@ -103,6 +113,27 @@
                 <dd>Também apresentam como particularidade suas pupilas ovais, semelhantes às pupilas verticais dos felídeos.</dd>
             </dl>
         </section>
+
+        <section class="grid-section galeria" data-anime="scroll">
+            <ul class="custom-controls">
+              <li><img src="img/slide/foto1-thumb.jpg" alt=""></li>
+              <li><img src="img/slide/foto2-thumb.jpg" alt=""></li>
+              <li><img src="img/slide/foto3-thumb.jpg" alt=""></li>
+              <li><img src="img/slide/foto4-thumb.jpg" alt=""></li>
+              <li><img src="img/slide/foto5-thumb.jpg" alt=""></li>
+              <li><img src="img/slide/foto6-thumb.jpg" alt=""></li>
+            </ul>
+            <div class="slide-wrapper">
+              <ul class="slide">
+                <li><img src="img/slide/foto1.jpg" alt=""></li>
+                <li><img src="img/slide/foto2.jpg" alt=""></li>
+                <li><img src="img/slide/foto3.jpg" alt=""></li>
+                <li><img src="img/slide/foto4.jpg" alt=""></li>
+                <li><img src="img/slide/foto5.jpg" alt=""></li>
+                <li><img src="img/slide/foto6.jpg" alt=""></li>
+              </ul>
+            </div>
+          </section>
 
         <section class="grid-section contato" id="contato">
             <h1 class="titulo">Contato</h1>
